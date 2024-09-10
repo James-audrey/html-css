@@ -1,8 +1,8 @@
 body{
     font-family: Arial, sans-serif;
     background-color: whitesmoke;
-    background-image:;
-    background-size:;
+    background-image: none;
+    background-size: none;
     margin: 0;
     padding: 20px;
 }
@@ -13,5 +13,13 @@ h1{
 
 p{
     font-size: 8px;
-    font-weight:;
+    font-weight: 0px;
+}
+
+.main-text{
+ margin: 0;
+}
+
+#side-text{
+ margin: 0;
 }
