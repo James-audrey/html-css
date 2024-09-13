@@ -1,68 +1,65 @@
-body{
-    font-family: Arial, sans-serif;
-    background-color: whitesmoke;
-    background-image: none;
-    background-size: none;
-    margin: 0;
-    padding: 20px;
+body {
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+  background-image: url("/images/bild-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 20px;
 }
 
-#title{
-    color: #333;
-    text-align: center;
+#title {
+  color: #333;
+  text-align: center;
 }
 
-p{
-    font-size: 8px;
-    font-weight: 0px;
+p {
+  font-size: 8px;
+  font-weight: 0px;
 }
 
-.main-text{
-    color: white;
-    padding: 15px;
-    text-align: center;
-    font-size: 50px;
-    background-color: black;
-    border-radius: 10px;
-
+.main-text {
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 50px;
+  background-color: black;
+  border-radius: 10px;
 }
 
-#side-text{
-    color: white;
-    padding: 15px;
-    text-align: center;
-    font-size: 50px;
-    background-color: black;
-    border-radius: 10px;
+#side-text {
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 50px;
+  background-color: black;
+  border-radius: 10px;
 }
 
-#extra-text{
-    color: white;
-    padding: 15px;
-    text-align: center;
-    font-size: 50px;
-    background-color: black;
-    border-radius: 10px;
+#extra-text {
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 50px;
+  background-color: black;
+  border-radius: 10px;
 }
 
 @media (max-width: 600px) {
-    .main-text{
-        color: white;
-        padding: 15px;
-        text-align: center;
-        font-size: 50px;
-        background-color: black;
-        border-radius: 10px;
-    
-    }
-    
-    #side-text{
-        display: none;
-    }
-    
-    #extra-text{
+  .main-text {
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 50px;
+    background-color: black;
+    border-radius: 10px;
+  }
 
-        display: none;
-    }
-   
+  #side-text {
+    display: none;
+  }
+
+  #extra-text {
+    display: none;
+  }
 }
