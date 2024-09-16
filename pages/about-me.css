@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Lora", serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+
+/* Header */
+.navBar {
+  background-color: #333;
+  color: #fff;
+  position: relative; /* Gör så attnav-baren är rätt positionerad för nav-iconet*/
+}
+
+.topNav {
+  display: flex; /* Använder flex för att linjera nav-innehållet*/
+  align-items: center;
+  position: relative; /* Säkergör så att naven är absolut positionerad för nav-iconet*/
+}
+
+.topNav a {
+  display: block;
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 150px; /* Utrymmet för iconet*/
+  font-size: 20px;
+}
+
+.topNav a.active,
+.topNav a:hover {
+  background-color: #555;
+}
+
+.nav-icon {
+  width: 75px;
+  height: auto;
+  position: absolute; /* Positioneringen ska vara absolut */
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%); /* För vertykalt centering*/
+  border-radius: 20px;
+  border: 5px solid black;
+}
+
+/* Main Content */
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 1em;
+}
+
+.grid-container-main-about {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.grid-item-about {
+  background-color: #f0f0f0;
+  padding: 1em;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+.grid-item1,
+.grid-item2 {
+  background-color: #f0f0f0;
+  padding: 1em;
+  border: 1px solid #ddd;
+}
+
+/* Footern */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  font-size: 23px;
+}
+
+footer a {
+  top: 20px;
+}
+
+.grid-container-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container-footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.grid-container-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-container-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .footer {
+    padding: 0.5em;
+  }
+}

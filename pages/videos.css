@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   margin: 0;
   font-family: "Lora", serif;
@@ -49,60 +50,51 @@ body {
   background-color: #555;
 }
 
-/* Main Content */
 .main-content {
+  margin-top: 50px;
+}
+.grid-container-main-videos {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto;
   grid-template-rows: repeat(2, auto);
   gap: 10px;
+}
+
+.grid-item-video1 {
+  background-color: #f0f0f0;
   padding: 1em;
+  border: 5px solid black;
+  margin-left: 50px;
+  margin-right: 150px;
+  margin-bottom: 20px;
+  border-radius: 3px;
 }
 
-.grid-container-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.grid-item1,
-.grid-item2 {
+.grid-item-video2 {
   background-color: #f0f0f0;
   padding: 1em;
   border: 1px solid #ddd;
+  border: 5px solid black;
+  margin-left: 50px;
+  margin-right: 150px;
+  border-radius: 3px;
+  margin-bottom: 50px;
 }
 
-.image-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center image horizontally */
-}
-
-.image-container img {
-  width: 100%; /* Responsive width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px;
-  border: 9px solid black;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.text-container {
-  padding: 1em;
+.video1-text {
+  float: right;
+  text-align: center;
+  margin-right: 550px;
   font-size: 20px;
+  margin-top: 50px;
+  margin-left: 30px;
 }
 
-figcaption {
-  color: whitesmoke;
-  background-color: rgb(61, 54, 54);
-  border: 8px solid black;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  margin-top: 5px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  font-size: 18px;
+.video2-text {
+  float: right;
+  text-align: center;
+  margin-right: 550px;
+  font-size: 20px;
 }
 
 /* Footern */
@@ -112,7 +104,10 @@ figcaption {
   padding: 1em;
   text-align: center;
   font-size: 23px;
-  position: relative;
+}
+
+iframe {
+  border-radius: 5px;
 }
 
 footer a {
@@ -134,14 +129,18 @@ footer a {
   text-decoration: underline;
 }
 
-/* Responsiv Design */
-@media (max-width: 770px) {
-  .grid-container-main {
-    grid-template-columns: 1fr; /* Så att kolumnerna är vertikala*/
+/* Responsive Design */
+@media (max-width: 900px) {
+  .header {
+    grid-template-columns: 1fr;
   }
 
-  .image-container {
-    margin-bottom: 1em; /*Mellan rum mellan bilden och texten på mindre skärmar */
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    padding: 0.5em;
   }
 
   .topNav {

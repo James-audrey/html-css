@@ -1,9 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="videos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+    </style>
+    <title>My Videos</title>
   </head>
-  <body></body>
+  <body>
+    <div class="grid-container">
+      <header class="navBar">
+        <nav class="topNav">
+          <img
+            src="/images/channels4_profile.jpg"
+            alt="Site Icon"
+            class="nav-icon"
+          />
+          <a href="../index.html">Home Page</a>
+          <a href="videos.html" class="active">My Videos</a>
+          <a href="about-me.html">About Me</a>
+        </nav>
+      </header>
+      <main class="main-content">
+        <div class="grid-container-main-videos">
+          <div class="grid-item-video1">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/o9chPfkTDdQ?si=ALtuZ5LsvOeOAYSJ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <p class="video1-text">
+              <b class="videos1-rubrik1">Rammus OK</b> <br />
+              Min mest kända video som har nästan 1 miljon visningar.
+            </p>
+          </div>
+
+          <div class="grid-item-video2">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/_fvrS359G6A?si=urfDVnPUXV5lKl_v"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <p class="video2-text">
+              <b class="videos1-rubrik2">Echoes of US</b> <br />
+              En egen skriven låt som jag släppt ut inte för länge sen
+            </p>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="grid-container-footer">
+          <a href="../index.html">Home Page</a> |
+          <a href="videos.html">My Videos</a> |
+          <a href="about-me.html">About Me</a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
