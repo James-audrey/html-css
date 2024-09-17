@@ -5,8 +5,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
   height: 100vh;
 }
 
@@ -47,15 +46,6 @@ body {
 .topNav a.active,
 .topNav a:hover {
   background-color: #555;
-}
-
-/* Main Content */
-.main-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, auto);
-  gap: 10px;
-  padding: 1em;
 }
 
 .grid-container-main {

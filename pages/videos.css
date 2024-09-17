@@ -6,8 +6,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
   height: 100vh;
 }
 
@@ -137,10 +136,6 @@ footer a {
 
   .main-content {
     grid-template-columns: 1fr;
-  }
-
-  .footer {
-    padding: 0.5em;
   }
 
   .topNav {
